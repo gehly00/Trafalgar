@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Mulish", sans-serif;
 }
 
 body{
@@ -20,26 +21,37 @@ body{
     flex-direction: row;
     gap: 80px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .cabecalho_botoes{
     display: flex;
     list-style-type: none;
     gap: 32px;
-    color: #7D7987;
+    color: #1F1534;
+    align-items: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 1.125rem;
+
+}
+
+.cabecalho_botoes_home{
+    font-weight: 700;
 }
 
 .conteudo{
-    padding: 2% 15% 0% 15%;
     display: flex;
     flex-direction: column;
+    /**background-image: url(element.png);**/
 }
 
 .conteudo_sessao1{
+    padding: 2% 15% 2% 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 82px;
+    gap: 40px;
+    
 }
 
 .conteudo_sessao1_textos{
@@ -50,19 +62,16 @@ body{
     gap: 40px;
 }
 
-.conteudo_sessao1_img{
-    max-width: 100%;
-}
-
 .conteudo_sessao1_textos_titulo{
-    font-size: 48px;
+    font-size: 3rem;
+    font-weight: 700;
     color: #000000;
     font-family: "Mulish", sans-serif;
 }
 
 .conteudo_sessao1_textos_texto{
     color: #7D7987;
-    font-size: 21px;
+    font-size: 1.313 rem;
     font-family: "Mulish", sans-serif;
 }
 
@@ -74,11 +83,63 @@ body{
     padding: 15px 0;
     justify-content: center;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.125 rem;
     font-family: "Mulish", sans-serif;
     text-align: center;
     
 }
 
+.conteudo_sessao1_img {
+    width: 50%;
+}
 
+.conteudo_sessao1_img img{
+    max-width: 100%;
+}
 
+.conteudo_sessao2{
+    padding: 5% 20% 0% 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.conteudo_sessao2_textos{
+    padding: 0% 10% 0% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.conteudo_sessao2_textos.titulo{
+    font-size: 2.25;
+    font-weight: 700;
+}
+
+.conteudo_sessao2_textos_texto{
+    color: #7D7987;
+}
+
+.conteudo_sessao2_conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:34px;
+}
+
+.conteudo_sessao2_conteiner_filho{
+    
+}
+
+hr{
+    position: relative;
+    top: 20px;
+    width: 56px;
+    border: none;
+    height: 2px;
+    background: #000000;
+    margin-bottom: 50px;
+    
+}
